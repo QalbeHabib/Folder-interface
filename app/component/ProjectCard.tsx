@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import FolderWrapper from "./FolderCardContainer";
 
 interface ProjectCardProps {
   image: string;
@@ -13,9 +14,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div>
-      {/* <SvgWrapper>s</SvgWrapper> */}
-      <div className="post-card__param">{flagContent}</div>
-      <div className="post-card__title-link w-inline-block">{description}</div>
+      <div>
+        <FolderWrapper />
+      </div>
+      <div>{flagContent}</div>
+      <div>{description}</div>
     </div>
   );
 };

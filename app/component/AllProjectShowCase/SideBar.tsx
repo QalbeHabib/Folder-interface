@@ -26,20 +26,20 @@ const tabsData: TabItem[] = [
       "Have a project?",
     ],
   },
-  {
-    key: "services",
-    title: "Services",
-    items: [
-      "All services",
-      "UX/UI design",
-      "Web design",
-      "Branding",
-      "Product development",
-      "Webflow development",
-      "Web development",
-      "Have a project?",
-    ],
-  },
+  // {
+  //   key: "services",
+  //   title: "Services",
+  //   items: [
+  //     "All services",
+  //     "UX/UI design",
+  //     "Web design",
+  //     "Branding",
+  //     "Product development",
+  //     "Webflow development",
+  //     "Web development",
+  //     "Have a project?",
+  //   ],
+  // },
 ];
 
 const Sidebar: React.FC = () => {

@@ -1,7 +1,7 @@
 const FolderWrapper = ({
-  children,
+  // children,
   ...props
-}: React.ComponentProps<"svg"> & { children: React.ReactNode }) => {
+}: React.ComponentProps<"svg">) => {
   return (
     <div className="relative w-full h-full">
       {/* Background Image */}
@@ -10,35 +10,37 @@ const FolderWrapper = ({
           backgroundImage:
             "url('https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/66bc83769af253c52bbc682e_Preview.webp')",
         }}
-        className="bg-cover h-full w-full bg-no-repeat bg-center absolute inset-0 "
+        className="bg-cover h-full w-full bg-no-repeat bg-center absolute inset-0 z-1 "
       />
-
+      <div className="absolute inset-0 border-[2.5px] border-[#02021E] " />
       <svg
-        viewBox="0 0 832 596"
+        viewBox="0 0 896 556"
+        width="100%"
+        height="100%"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="relative"
+        className="relative "
         {...props}
       >
         <path
-          d="M0 27.5C2.869 9.86825 11 2 29 0L0 8.5026e-05V27.5Z"
+          d="M0 27.4503C2.869 9.85041 11 1.99638 29 0L0 8.48723e-05V27.4503Z"
           fill="#02021E"
         />
         <path
-          d="M27.5 595C9.8683 592.131 2.00005 584 4.87389e-05 566L-4.54896e-08 594C1.34763e-08 595.349 0.000197886 595 0.000197886 595L27.5 595Z"
+          d="M896 527.584C893.131 545.184 885 553.088 867 555.084H896V527.584Z"
           fill="#02021E"
         />
         <path
-          d="M832 567C829.131 584.632 821 593 803 595L831 595L832 595L832 567Z"
+          d="M0 527.45C2.869 545.05 11 553.088 29 555.084H0V527.45Z"
           fill="#02021E"
         />
         <path
-          d="M262.916 12.2483C254.958 4.40752 243.166 2.17877 229 0H832V74C824.96 48.8689 816.5 37.5 790.603 31.6414C788 28.5 314.867 34.9538 295.834 31.6414C276.801 28.3289 273.48 23.3397 262.916 12.2483Z"
+          d="M326.916 12.2261C318.958 4.39955 307.166 2.17484 293 0H896V73.8662C888.96 48.7805 880.5 37.4322 854.603 31.5842C852 28.4485 378.867 34.8906 359.834 31.5842C340.801 28.2777 337.48 23.2975 326.916 12.2261Z"
           fill="#02021E"
         />
-        <foreignObject x="0" y="0" width="832" height="596">
-          {children}
-        </foreignObject>
+        {/* <foreignObject x="0" y="0" width="832" height="596">
+          habib
+        </foreignObject> */}
       </svg>
     </div>
   );
