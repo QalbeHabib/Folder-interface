@@ -72,10 +72,12 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 article,
@@ -325,6 +327,7 @@ th {
 
 html {
   height: 100%;
+  overscroll-behavior: none;
 }
 
 body {
@@ -335,6 +338,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  overscroll-behavior: none;
 }
 
 img {

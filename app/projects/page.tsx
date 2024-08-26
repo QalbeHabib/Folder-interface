@@ -1,15 +1,6 @@
-import ProjectHero from "../component/Projects";
-import SecondSection from "../component/AllProjectShowCase/SecondarySection";
-import ThirdSection from "../ThirdSection/page";
-
+import MainSecondarySection from "./_component/MainSecondarySection";
 const page = () => {
-  return (
-    <>
-      <ProjectHero />
-      <SecondSection />
-      <ThirdSection />
-    </>
-  );
+  return <MainSecondarySection />;
 };
 
 export default page;

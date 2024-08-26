@@ -80,7 +80,7 @@ const ReviewCard = ({
 
 export function MarqueeDemo() {
   return (
-    <div className="w-screen h-screen relative -left-40 -top-24">
+    <div className="w-screen h-screen relative -left-48 -top-24">
       <Marquee className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />

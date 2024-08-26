@@ -1,7 +1,4 @@
-const FolderWrapper = ({
-  // children,
-  ...props
-}: React.ComponentProps<"svg">) => {
+const FolderWrapper = ({ ...props }: React.ComponentProps<"svg">) => {
   return (
     <div className="relative w-full h-full">
       {/* Background Image */}
@@ -12,7 +9,7 @@ const FolderWrapper = ({
         }}
         className="bg-cover h-full w-full bg-no-repeat bg-center absolute inset-0 z-1 "
       />
-      <div className="absolute inset-0 border-[2.5px] border-[#02021E] " />
+      <div className="absolute inset-0 border-b border-r border-[#02021E] " />
       <svg
         viewBox="0 0 896 556"
         width="100%"
@@ -38,9 +35,6 @@ const FolderWrapper = ({
           d="M326.916 12.2261C318.958 4.39955 307.166 2.17484 293 0H896V73.8662C888.96 48.7805 880.5 37.4322 854.603 31.5842C852 28.4485 378.867 34.8906 359.834 31.5842C340.801 28.2777 337.48 23.2975 326.916 12.2261Z"
           fill="#02021E"
         />
-        {/* <foreignObject x="0" y="0" width="832" height="596">
-          habib
-        </foreignObject> */}
       </svg>
     </div>
   );

@@ -49,7 +49,7 @@ const ThirdSection = () => {
               </div>
             </div>
             {/*  */}
-            <div className="columns__col is-1-old mod--projects-dribble !w-full md:!w-[65%]">
+            <div className="columns__col is-1-old mod--projects-dribble !w-full md:!w-[60%]">
               <div className="dribble-card__border overflow-hidden">
                 <div className=" rotate-45">
                   <MarqueeDemo />

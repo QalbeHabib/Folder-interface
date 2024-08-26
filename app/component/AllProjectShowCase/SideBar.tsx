@@ -26,20 +26,6 @@ const tabsData: TabItem[] = [
       "Have a project?",
     ],
   },
-  // {
-  //   key: "services",
-  //   title: "Services",
-  //   items: [
-  //     "All services",
-  //     "UX/UI design",
-  //     "Web design",
-  //     "Branding",
-  //     "Product development",
-  //     "Webflow development",
-  //     "Web development",
-  //     "Have a project?",
-  //   ],
-  // },
 ];
 
 const Sidebar: React.FC = () => {
@@ -72,7 +58,7 @@ const Sidebar: React.FC = () => {
 
   return (
     <>
-      <div className="w-full border rounded-xl shadow-md p-5">
+      <div className="w-full border rounded-3xl shadow-md p-5">
         {tabsData.map((tab) => (
           <div key={tab.key} className="mb-4">
             <div

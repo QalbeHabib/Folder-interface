@@ -1,11 +1,12 @@
 import { FaArrowDown } from "react-icons/fa6";
 import Card from "./ProgressCard";
+import FolderCarousalWrapper from "./FolderLayout/FolderContainerWithCarausal";
 
 const ProjectHero = () => {
   return (
-    <div className="w-full max-w-[1400px] mx-auto">
-      <div className="flex justify-between items-center gap-10">
-        <div className="post-card__img-link w-full is-big is-big-border my-20">
+    <div className="w-full max-w-[1400px] mx-auto mt-40">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-10">
+        <div className="post-card__img-link w-full h-full is-big is-big-border ">
           <div className="heading-wrap mod--catalog-border ">
             <h1 className="heading-1 mod--catalog-border font-bold">
               Our
@@ -34,11 +35,7 @@ const ProjectHero = () => {
             </div>
           </div>
         </div>
-        {/* <div className="post-card__img-link w-full is-big my-20"> */}
-        {/* <div className="catalog-card-border__content"> */}
-        <Card />
-        {/* </div> */}
-        {/* </div> */}
+        <FolderCarousalWrapper />
       </div>
     </div>
   );
